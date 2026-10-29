@@ -1,0 +1,74 @@
+* {
+  font-family: Inter;
+  /* border: 1px solid red; */
+}
+
+@font-face {
+  font-family: Inter;
+  src:
+   url ('../fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('ttf');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+.title {
+  color: var(--primary-color);
+}
+
+.container {
+  width: 1152px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+  background-color: var(--silver-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 84px;
+  align-items: center;
+}
+
+.logo {
+  
+}
+
+.nav-list {
+  display: flex;
+  gap: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+/* Кнопки в шапке */
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+}
+/* Button-1 - левая */
+.button-1 {
+  border-radius: 0;
+  width: 77px;
+  height: 40px;
+  background-color: var(--silver-color);
+  border: none;
+  color: var(--primary-color);
+}
+/* Button-2 - правая */
+.button-2 {
+  border-radius: 8px;
+  width: 91px;
+  height: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+
+}
