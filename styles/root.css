@@ -3,4 +3,31 @@
   --silver-color: #F5F7FA;
   --D_grey-color: #4D4D4D;
   --grey-color: #717171;
+  --neutral-white-color: #FFFFFF;
+}
+
+.button__primary {
+  background-color: var(--primary-color);
+  color: var(--neutral-white-color);
+  border-radius: 8px;
+  border: none;
+}
+
+.button__tertiary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 0;
+
+}
+
+.button__normal {
+  padding: 16px 32px;
+
+}
+.button__medium {
+  padding: 14px 32px;
+}
+
+.button__small {
+  padding: 8px 24px;
 }

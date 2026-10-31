@@ -1,13 +1,13 @@
 * {
   font-family: Inter;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @font-face {
   font-family: Inter;
   src:
-   url ('../fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('ttf');
-  font-weight: normal;
+  url('../fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
   font-display: swap;
   font-style: normal;
 }
@@ -16,20 +16,25 @@
   color: var(--primary-color);
 }
 
+/* Шапка */
+.header {
+  background-color: var(--silver-color);
+  height: 84px;
+}
+
 .container {
   width: 1152px;
   height: 100%;
   margin: 0 auto;
 }
 
-/* Шапка */
-.header {
-  background-color: var(--silver-color);
+.header-wrapper {
+  height: 100%;
+  width: 100%;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 84px;
-  align-items: center;
 }
 
 .logo {
@@ -51,24 +56,6 @@
   font-size: 14px;
   line-height: 20px;
 }
-/* Button-1 - левая */
-.button-1 {
-  border-radius: 0;
-  width: 77px;
-  height: 40px;
-  background-color: var(--silver-color);
-  border: none;
-  color: var(--primary-color);
-}
-/* Button-2 - правая */
-.button-2 {
-  border-radius: 8px;
-  width: 91px;
-  height: 40px;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-}
 
 main {
 
@@ -76,28 +63,31 @@ main {
 
 /* Offer */
 .offer {
-  /* width: 657px; */
-  /* height: 276px; */
   display: flex;
   align-items:center ;
-  /* width: auto; */
   gap: 105px;
+  flex-direction: column;
 
+}
+
+.offer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Offer текст */
 .offer-text {
   display: flex;
   flex-direction: column;
-  margin-left: 144px;
-  margin-top: 161px;
-  margin-bottom: 161px;
   gap: 16px;
 
 }
 .offer-text span:nth-child(1) {
   font-size: 64px;
   color: var(--D_grey-color);
+  display: inline-block;
 
 }
 .offer-text span:nth-child(2) {
@@ -112,7 +102,6 @@ main {
 
 /* Offer кнопка */
 .offer-btn {
-  display: flex;
   align-items: center;
   width: 128px;
   height: 52px;
@@ -121,11 +110,18 @@ main {
   border: none;
   background-color: var(--primary-color);
   font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 5%;
 }
 /* Offer картинка */
 .offer-img {
   width: 391px;
   height: 407px;
-  margin-top: 96px;
-  margin-bottom: 96px;
+}
+
+.offer-points {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+ 
 }
