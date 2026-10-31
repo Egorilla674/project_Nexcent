@@ -64,7 +64,6 @@ main {
 /* Offer */
 .offer {
   display: flex;
-  align-items:center ;
   gap: 105px;
   flex-direction: column;
 
@@ -81,7 +80,8 @@ main {
 .offer-text {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
+  margin-top: 161px;
 
 }
 .offer-text span:nth-child(1) {
@@ -117,11 +117,13 @@ main {
 .offer-img {
   width: 391px;
   height: 407px;
+  margin-top: 96px;
 }
 
 .offer-points {
   display: flex;
   flex-direction: row;
   gap: 5px;
+  margin: 0 auto;
  
 }
