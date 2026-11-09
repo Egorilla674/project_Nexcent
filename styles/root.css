@@ -4,6 +4,10 @@
   --D_grey-color: #4D4D4D;
   --grey-color: #717171;
   --neutral-white-color: #FFFFFF;
+  --text-grey-color: #18191F;
+  --button-L_grey-color: #F5F7FA;
+  --text-neutral-grey: #717171;
+  --neutral-silver-color: rgba(245, 247, 250, 1);
 }
 
 .button__primary {
@@ -18,11 +22,13 @@
   background-color: transparent;
   color: var(--primary-color);
   border: 0;
-
 }
 
 .button__normal {
   padding: 16px 32px;
+  font-size: 20px;
+  color: var(--primary-color);
+  font-weight: 600;
 
 }
 .button__medium {
@@ -31,4 +37,11 @@
 
 .button__small {
   padding: 8px 24px;
+}
+.button__secondary {
+background-color: var(--button-L_grey-color);
+}
+
+.button__big {
+  padding: 14px 32
 }
